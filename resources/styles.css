@@ -45,3 +45,123 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+
+/* GLOBAL STYLES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+body {
+      font-family:"Poppins", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+      align-items: center;
+      /* background-color: palegreen; */
+    }
+
+/* HEADER SECTION */
+
+.header {
+    background-color: #4C8BF5;
+    line-height: 100px;
+}
+.site-title {
+    display: inline-block;
+    margin-left: 160px;
+    vertical-align: middle;
+}
+.site-title > * {
+    vertical-align: middle;
+    line-height: normal;
+}
+.site-title img {
+    max-height: 60px;
+    display: inline-block;
+}
+.site-title h2 {
+    display: inline-block;
+    margin-left: 20px;
+    font-family: poppins;
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+}
+.site-title span {
+    font-weight: 300;
+    font-size: 24px;
+    margin-left: 20px;
+}
+
+/* MAIN SECTION */
+.main-container {
+    /* background-color: orchid; */
+    width: 1030px;
+    position: relative;
+    margin: 50px auto;
+  }
+.images-container {
+    width: 1030px;
+    display: flex;
+  }
+  
+  .mainslide {
+    width: 928px;
+    height: 618px;
+    display: inline-block;
+    background-color: #FFE1E1;
+    vertical-align: middle;
+    filter: drop-shadow(-5px 5px 4px grey);
+  }
+  
+  .previous-slide {
+    display: inline-block;
+    height: 600px;
+    width: 60px;
+    /* background-color: steelblue; */
+  }
+  
+  .previous-slide img {
+    vertical-align:middle;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 15px;
+    margin: auto;
+  }
+  
+  .next-slide {
+    display: inline-block;
+    height: 600px;
+    width: 60px;
+    /* background-color: teal; */
+  }
+  
+  
+  .next-slide img {
+    vertical-align:middle;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 15px;
+    margin: auto;
+  }
+
+  /* DESCRIPTION CONTAINER */
+
+.description-container {
+    width: 1030px;
+    position: relative;
+    margin: 0px auto 100px;
+    padding: 30px 60px;
+  }
+.description-container h3 {
+    display: inline-block;
+    margin-left: 20px;
+    font-family: poppins;
+    color: #4C8BF5;
+    font-size: 2em;
+    font-weight: 600;
+}
+  
