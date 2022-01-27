@@ -65,8 +65,8 @@ table {
 .site-title > * {
     vertical-align: middle;
 }
-.site-title img {
-    max-height: 40px;
+.logo {
+    max-width: 40px;
     display: inline-block;
 }
 .site-title h2 {
@@ -81,58 +81,86 @@ table {
     font-size: 24px;
     margin-left: 20px;
 }
-/* MEDIA QUERIES FOR HEADER */
-@media only screen and (max-width: 1000px) {
-  .site-title h2 {
-    font-size: 1.5em;
-  }
-}
-@media only screen and (max-width: 650px) {
-  .site-title span {
-    display: none;
-    font-size: 1.15em;
-  }
-}
 
 
 /* MAIN SECTION */
 .main-container {
-    /* width: 1030px;
-    position: relative; */
+    min-width: 960px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 50px auto;
   }
-.images-container {
-    width: 1030px;
-    display: flex;
-  }
   
   .mainslide {
-    width: 60%;
-    height: 500px;
-    background-color: #FFE1E1;
+    width: 780px;
+    height: auto;
     filter: drop-shadow(-5px 5px 4px grey);
   }
-  .main-container img {
+  .previous-slide, .next-slide {
     padding: 0 20px;
   }
-  
   /* DESCRIPTION CONTAINER */
 
 .description-container {
-    width: 1030px;
+    width: 780px;
     position: relative;
     margin: 0px auto 100px;
-    padding: 30px 60px;
   }
 .description-container h3 {
-    display: inline-block;
-    margin-left: 20px;
     font-family: poppins;
     color: #4C8BF5;
     font-size: 2em;
     font-weight: 600;
 }
   
+
+
+
+
+
+
+.img {width:100%;}
+
+/* Everything before the media queries gets
+applied to screen sizes greater than 960 pixels */
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+
+/* Tablet Screen Sizes */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .site-title h2 {
+    font-size: 1.5em;
+  }
+  .main-container {
+    min-width: 780px;
+  }
+  .mainslide, .description-container {
+    width: 620px;
+  }
+}
+
+/* Mobile Landscape Screen Sizes */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .site-title span {
+    display: none;
+    font-size: 1.15em;
+  }
+  .main-container {
+    min-width: 460px;
+  }
+  .mainslide, .description-container {
+    width: 460px;
+  }
+}
+/* Mobile Portrate Screen Sizes */
+@media only screen and (max-width: 479px) {
+  .main-container {
+    min-width: 300px;
+  }
+  .mainslide, .description-container {
+    width: 300px;
+  }
+}
