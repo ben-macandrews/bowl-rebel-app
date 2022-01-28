@@ -66,6 +66,7 @@ h3 {
 p {
   font-size: 1rem;
   line-height: 1.5;
+  color: #666666; 
 }
 /* HEADER SECTION */
 
@@ -104,9 +105,40 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 50px auto 20px auto;
+    margin: 0px auto 20px auto;
   }
   
+  /* NAV MENU */
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto;
+  height: auto;
+  width: 780px;
+  margin: 20px auto 10px auto;
+  justify-items: center;
+  align-items: end;
+  grid-column-gap: 20px;
+}
+.nav-menu p {
+  padding-top: 5px;
+  width: 100%;
+  text-align: center;
+}
+.nav-strip {
+  background-color: lightgrey;
+  height: 2px;
+  width: 100%
+}
+.placeholder-styling-1 {
+  background-color: #fafafa;
+}
+.placeholder-styling-2 {
+  background-color: #4C8BF5;
+  height: 3px;
+}
+  /* SLIDESHOW */
+
   .mainslide {
     width: 780px;
     height: auto;
@@ -193,6 +225,9 @@ applied to screen sizes greater than 960 pixels */
   .mainslide, .description-container {
     width: 620px;
   }
+  .nav-menu {
+    width: 620px;
+  }  
 }
 
 /* Mobile Landscape Screen Sizes */
@@ -207,6 +242,12 @@ applied to screen sizes greater than 960 pixels */
   .mainslide, .description-container {
     width: 460px;
   }
+  .nav-menu {
+    width: 460px;
+  }
+  .nav-menu p {
+    font-size: 0.8rem;
+  }
 }
 /* Mobile Portrate Screen Sizes */
 @media only screen and (max-width: 479px) {
@@ -216,4 +257,7 @@ applied to screen sizes greater than 960 pixels */
   .mainslide, .description-container {
     width: 300px;
   }
+  .nav-menu {
+    display: none;
+  } 
 }
