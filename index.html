@@ -21,20 +21,38 @@
         </div>
     </header>
 
+
+    
     <!-- MAIN SECTION -->
     <main>
         <div class="main-container">
-            <!-- <div class="images-container"> -->
+                <!-- PREVIOUS BUTTON -->
                 <div class="previous-slide">
-                    <img src="./resources/images/slide-left.svg" alt="previous slide">
+                    <a class="prev" onclick="plusSlides(-1)"><img src="./resources/images/slide-left.svg" alt="previous slide"></a>
                 </div>
-                <div class="mainslide">
-                    <img class="img" src="./resources/images/Place-holder-slide.png" alt="main slides">
+                <!-- SLIDESHOW IMAGES -->
+                <div class="mainslide mySlides fade">
+                    <img class="img" src="./resources/images/S1 Understanding the User.png" alt="main slides">
                 </div>
+                <div class="mainslide mySlides fade">
+                    <img class="img" src="./resources/images/S2 Understanding the User 2.png" alt="main slides">
+                </div>
+                <div class="mainslide mySlides fade">
+                    <img class="img" src="./resources/images/S3 Understanding the User 3.png" alt="main slides">
+                </div>
+                <div class="mainslide mySlides fade">
+                    <img class="img" src="./resources/images/S4 Understanding the User 4.png" alt="main slides">
+                </div>
+                <!-- NEXT BUTTON -->
                 <div class="next-slide">
-                    <img src="./resources/images/slide-right.svg" alt="next slide">
+                    <a class="prev" onclick="plusSlides(+1)"><img src="./resources/images/slide-right.svg" alt="next slide"></a>
                 </div>
-            <!-- </div> -->
+        </div>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
         </div>
     </main>
 
@@ -49,5 +67,6 @@
             </p>
         </article>
     </div>
+    <script src="./resources/script.js"></script>
 </body>
 </html>
