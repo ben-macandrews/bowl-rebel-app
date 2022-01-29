@@ -120,23 +120,25 @@ p {
   align-items: end;
   grid-column-gap: 20px;
 }
-.nav-menu p {
+.nav-menu span {
   padding-top: 5px;
-  width: 100%;
   text-align: center;
+  display: block;
+  margin: auto;
+  width: 100%;
 }
 .nav-strip {
   background-color: lightgrey;
   height: 2px;
   width: 100%
 }
-.placeholder-styling-1 {
+/* .placeholder-styling-1 {
   background-color: #fafafa;
 }
 .placeholder-styling-2 {
   background-color: #4C8BF5;
   height: 3px;
-}
+} */
   /* SLIDESHOW */
 
   .mainslide {
@@ -173,6 +175,10 @@ p {
 }
 .active, .dot:hover {
   background-color: #4C8BF5;
+}
+.active-nav {
+  background-color: #ececec;
+  font-weight: bold;
 }
 /* Fading animation */
 .fade {
